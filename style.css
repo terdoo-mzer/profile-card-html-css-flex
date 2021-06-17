@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --deep-cyan: hsl(185, 75%, 39%);
+    --dark-saturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--deep-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position:-80% 170%, 190% -70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.container {
+    background: #fff;
+    width: 350px;
+    height: 370px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    position: relative;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-head {
+    background: url(./images/bg-pattern-card.svg);
+    height: 120px;
+}
+
+.card-head img {
+    border: 4px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    right: 128px;
+}
+
+.victor-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 195px;
+    left: 105px;
+}
+
+.name-age {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.victor-name, .victor-age {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.card-stats {
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    border-top:  1px solid #e3e3e3;
+    position: absolute;
+    bottom: 30px;
+}
+
+.card-stats-num {
+    padding-top: 35px;
+    text-align: center;
+}
+
+.card-stats-info:nth-child(2) {
+    padding-left: 5px;
+}
+
+.card-stats-info, .location {
+    font-size: 13px;
+    color: var(--dark-gray)
+}
+
+.victor-name, .card-stats-num {
+    color: var(--dark-saturated-blue);
+    font-weight: 700;
+}
+
+.victor-age {
+    color: var(--dark-grayish-blue);
+}
+
